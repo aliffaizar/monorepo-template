@@ -1,0 +1,7 @@
+{
+  "extends": "tsconfig/vite.json",
+  "include": ["src", "./.eslintrc.cjs", "./jest.config.cjs", "./jest.setup.ts"],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+  }
+}

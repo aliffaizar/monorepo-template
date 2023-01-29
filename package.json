@@ -1,0 +1,26 @@
+{
+  "name": "monorepo-template",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "format": "turbo run format --parallel",
+    "lint": "turbo run lint --parallel",
+    "prepare": "husky install",
+    "test": "turbo run test --parallel"
+  },
+  "devDependencies": {
+    "eslint": "^8.33.0",
+    "husky": "^8.0.3",
+    "turbo": "^1.7.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "packageManager": "pnpm@7.25.1"
+}
